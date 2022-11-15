@@ -21,7 +21,7 @@ class DBAdmin {
 
   Future<Database> initDatabase() async {
     Directory directory = await getApplicationDocumentsDirectory();
-    String path = join(directory.path, "alumnDB.db");
+    String path = join(directory.path, "alumnODB.db");
     return await openDatabase(
       path,
       version: 1,
